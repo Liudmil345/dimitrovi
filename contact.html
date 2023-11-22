@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Родословно дърво</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      .card {border: 0;}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <h1><a href="index.html" class="navbar-brand font-weight-bold text-primary">Родословие на Димитрови</a></h1>
+        <div id="search" class="ml-auto mr-3 mt-4">
+          <!-- start of freefind search box html -->
+          <table cellpadding=0 cellspacing=0 border=0 style="display: inline-block;">
+            <tr>
+              <td  colspan=2 style="font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;">
+                <form style="margin:0px; margin-top:4px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                <input type="hidden" name="si" value="11236508">
+                <input type="hidden" name="pid" value="r">
+                <input type="hidden" name="n" value="0">
+                <input type="hidden" name="_charset_" value="">
+                <input type="hidden" name="bcd" value="&#247;">
+                <input type="text" name="query" size="30"> 
+                <input type="submit" value="Търси" class="btn btn-sm bg-primary text-white">
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align:left; font-family: Arial, Helvetica, sans-serif;	font-size: 7.5pt; padding-top:4px;">
+                <a style="text-decoration:none; color:gray;" href="https://www.freefind.com"  rel="nofollow" >Сайтово търсене</a><a style="text-decoration:none; color:gray;" href="https://www.freefind.com"  rel="nofollow" > от
+                <span style="color: #606060;">freefind</span>&nbsp;</a>
+              </td>
+            
+              <td style="text-align:right; font-family: Arial, Helvetica, sans-serif;	font-size: 7.5pt; padding-top:4px;">
+                <a href="https://search.freefind.com/find.html?si=11236508&amp;pid=a">Разширено търсене</a>
+              </td>
+            </tr>
+          </table>
+          <!-- end of freefind search box html -->
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary btn-sm dropdown-toggle" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Потомци</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+            <a href="children.html" class="dropdown-item">Деца</a>
+            <a href="grandchildren.html" class="dropdown-item">Внуци</a>
+            <a href="great-grandchildren.html" class="dropdown-item">Правнуци</a>
+            <a href="great-great-grandchildren.html" class="dropdown-item">Праправнуци</a>
+            <a href="last-generation.html" class="dropdown-item">Последно поколение</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+        <div class="container my-3 my-sm-5">
+            <h2 class="text-uppercase font-weight-bold text-center mb-sm-4">Контакт</h2>
+            <img src="img/700x500.png" alt="Контакт" class="col-12 img-fluid d-block mx-auto my-5" />
+            <div class="row">
+                <div class="col-12 col-lg-6 mb-3">
+                  <h4>Изпратете ми съобщение!</h4>
+                  <form id="form" method="post" enctype="text/plain" action="mailto:lg_345@abv.bg">
+                    <div class="row">
+                      <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="name">Име:</label>
+                          <div class="input-group" id="form-name">
+                            <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <input type="text" id="name" class="form-control" name="name" placeholder="Име" required="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="email">Електронна поща:</label>
+                          <div class="input-group" id="form-email">
+                            <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <input type="email" id="email" class="form-control" name="email" placeholder="email@domain.com" required="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-6">
+                        <div class="form-group" id="form-phone">
+                          <label for="telephone">Телефон:</label>
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <input type="tel" id="telephone" class="form-control" name="telephone" placeholder="0123456789">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <div class="form-group" id="form-city">
+                          <label for="city">Град:</label>
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                            <input id="city" type="text" class="form-control" name="city" placeholder="Ловеч">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group" id="form-message">
+                      <label for="textarea">Съобщение:</label>
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                        <textarea id="textarea" class="form-control" rows="5" name="message" placeholder="Напишете Вашето съобщение тук..." required=""></textarea>
+                      </div>
+                    </div>
+                    <input id="send" type="submit" class="btn btn-primary" value="Изпрати" />
+                    <input type="reset" class="btn btn-secondary" value="Изчисти" />
+                  </form>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <h4>Къде да ме намерите?</h4>
+                  <div class="embed-responsive embed-responsive-4by3">
+                    <iframe  class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19026.409173377855!2d24.71771515709416!3d43.1430029085796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sbg!2sbg!4v1700414391988!5m2!1sbg!2sbg" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    </main>
+    <footer class="small bg-light">
+      <div class="container py-3 py-sm-5 text-center">
+        <img src="img/tree_logo.png" alt="Родословие" class="mb-2 mb-sm-4">
+        <p class="mb-2 mb-sm-4">&copy; 2023 Людмил Герганов. Всички права запазени.</p>
+        <p class="mb-2 mb-sm-4 text-warning font-weight-bold"><span class="bg-white">lg_345@abv.bg</span></p>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item"><a href="index.html">Родоначалници</a></li>
+          <li class="list-inline-item"><a href="children.html">Деца</a></li>
+          <li class="list-inline-item"><a href="grandchildren.html">Внуци</a></li>
+          <li class="list-inline-item"><a href="great-grandchildren.html">Правнуци</a></li>
+          <li class="list-inline-item"><a href="great-great-grandchildren.html">Праправнуци</a></li>
+          <li class="list-inline-item"><a href="last-generation.html">Последно поколение</a></li>
+          <li class="list-inline-item"><a href="contact.html" class="text-danger">Контакт</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="//inc.freefind.com/inc/ffse-overlay.min.js" async></script>
+
+    <script type="text/javascript"></script>
+  </body>
+</html>
